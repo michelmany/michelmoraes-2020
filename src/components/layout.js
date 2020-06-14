@@ -12,8 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import "../assets/stylesheets/layout.scss"
-import {ThemeProvider} from 'styled-components'
-import theme from '../assets/stylesheets/theme'
+import { ThemeProvider } from "styled-components"
+import theme from "../assets/stylesheets/theme"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,9 +28,11 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Header siteTitle={data.site.siteMetadata.title}/>
-      <main>{children}</main>
-      <Footer/>
+      <main className="">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        {children}
+      </main>
+      <Footer />
     </ThemeProvider>
   )
 }

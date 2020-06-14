@@ -1,5 +1,5 @@
-let theme = {
-  primary: '#007bff',
+const theme = {
+  primary: "#4E4EFB",
 }
 
 export default theme

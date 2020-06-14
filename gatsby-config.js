@@ -1,17 +1,15 @@
-let facebook_pixel = ''
-let gtm = ''
+let facebook_pixel = ""
+let gtm = ""
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Bootstrap Strapi Starter`,
-    description: `Gatsby + Strapi = <3`,
-    author: `Jeremy Lynch`,
-    siteUrl: `https://gatsby-strapi-starter.netlify.com/`,
-    phone: '12345',
-    fax: '12345',
-    address: '123 fake street',
-    email: 'contact@test.com'
-
+    title: `Michel Moraes`,
+    description: `Full Stack Developer`,
+    author: `Michel Moraes`,
+    siteUrl: `https://www.michelmoraes.dev/`,
+    phone: "+34679119468",
+    address: "Spain",
+    email: "michel@nitdesign.com.br",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,23 +22,23 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-tagmanager',
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: gtm,
-        includeInDevelopment: false
-      }
+        includeInDevelopment: false,
+      },
     },
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
         pixelId: facebook_pixel,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: './src/assets/images/gatsby-icon.png'
-      }
+        logo: "./src/assets/images/gatsby-icon.png",
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -61,9 +59,9 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
-    'gatsby-plugin-robots-txt',
+    "gatsby-plugin-robots-txt",
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cache`,
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
   ],
 }

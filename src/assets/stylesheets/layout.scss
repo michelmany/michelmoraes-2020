@@ -1,4 +1,4 @@
-$gradient: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
+$gradient: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
 
 // Bootstrap Custom Variables here
 
@@ -39,7 +39,8 @@ $gradient: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
 //@import "node_modules/bootstrap/scss/spinners";
 @import "node_modules/bootstrap/scss/utilities";
 //@import "node_modules/bootstrap/scss/print";
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 
 /// Typography
 
@@ -47,7 +48,8 @@ $gradient: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
   font-family: "HKGrotesk";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/HKGrotesk-Bold.woff2') format("woff2"), url('../fonts/HKGrotesk-Bold.woff') format("woff");;
+  src: url("../fonts/HKGrotesk-Bold.woff2") format("woff2"),
+    url("../fonts/HKGrotesk-Bold.woff") format("woff");
   font-display: swap;
 }
 
@@ -55,22 +57,28 @@ $gradient: linear-gradient(210deg,#943cff 0%,#dd45d3 40.13%,#fc9a57 90%);
   font-family: "HKGrotesk";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/HKGrotesk-ExtraBold.woff2') format("woff2"), url('../fonts/HKGrotesk-ExtraBold.woff') format("woff");;
+  src: url("../fonts/HKGrotesk-ExtraBold.woff2") format("woff2"),
+    url("../fonts/HKGrotesk-ExtraBold.woff") format("woff");
   font-display: swap;
 }
 
 body {
-  font-family: 'HKGrotesk', sans-serif;
+  font-family: "Quicksand", sans-serif;
   overflow-x: hidden;
 }
 
 h1 {
-  font-family: "HKGrotesk";
-  font-weight: 500
+  font-family: "Quicksand";
+  font-weight: 700;
+
+  @media (min-width: 1200px) {
+    font-size: 3.2rem;
+  }
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
   .text-muted {
     color: #869ab8;
   }
@@ -79,4 +87,8 @@ p {
 .bg-primary-faded {
   color: $primary;
   background-color: rgba(red($primary), green($primary), blue($primary), 0.2);
+}
+
+.text-primary {
+  color: #253341 !important;
 }
