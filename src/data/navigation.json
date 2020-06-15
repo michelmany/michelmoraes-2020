@@ -1,10 +1,6 @@
 [
   {"name": "Home", "url": "/"},
-  {"name": "Contact", "url": "/contact"},
-  {"name": "GitHub", "url": "https://github.com/michelmany"},
-  {"name": "Options", "url": "", "dropdownItems": [
-    {"name": "Option 1", "url": "/test"},
-    {"name": "Option 2", "url": "/test"},
-    {"name": "Reset", "url": "/test"}
-  ]}
+  {"name": "Portfolio", "url": "/portfolio"},
+  {"name": "Startup Projects", "url": "/projects"},
+  {"name": "Contact", "url": "/contact"}
 ]
