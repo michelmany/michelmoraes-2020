@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Container, Collapse, Navbar, NavbarToggler } from "reactstrap"
 // import Link from "./link"
 import { Link } from "gatsby"
@@ -9,9 +9,13 @@ import "../assets/stylesheets/burger-menu.scss"
 
 const Header = props => {
   const [isOpen, setIsOpen] = useState(false)
+  const [bodyEl, setBodyEl] = useState(false)
+  const [openBtn, setOpenBtn] = useState(false)
 
-  const bodyEl = document.body
-  const openbtn = document.getElementById("open-button")
+  useEffect(() => {
+    setBodyEl(document.body)
+    setOpenBtn(document.getElementById("open-button"))
+  }, [])
 
   const toggle = () => {
     setIsOpen(!isOpen)
@@ -19,17 +23,14 @@ const Header = props => {
   }
 
   function toggleMenu() {
-    if (isOpen) {
-      bodyEl.classList.remove("show-menu")
-    } else {
-      bodyEl.classList.add("show-menu")
-    }
+    isOpen
+      ? bodyEl.classList.remove("show-menu")
+      : bodyEl.classList.add("show-menu")
   }
 
   function closeMenu(ev) {
     var target = ev.target
-    if (isOpen && target !== openbtn) {
-      console.log("clicked")
+    if (isOpen && target !== openBtn) {
       toggleMenu()
     }
   }
