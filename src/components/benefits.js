@@ -42,11 +42,11 @@ const Benefits = ({ data }) => (
         </div>
         <Stack
           title="Front-end Development"
-          content="We're using the css-in-js methodology to make this website extremely fast!"
+          content="We're using the css-in-js methodology to make this website extremely fast! Javascript, React.js, Vue.js, Sass."
         />
         <Stack
           title="Back-end Development"
-          content="We're using the css-in-js methodology to make this website extremely fast!"
+          content="I like to code things from scratch, and enjoy bringing ideas to life in the browser. PHP, WordPress, Laravel, Node.js, Express."
         />
       </Col>
       <Col md="6">

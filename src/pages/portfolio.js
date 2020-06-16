@@ -14,7 +14,11 @@ export default ({ data }) => {
     <Layout>
       <PageTitle title="Portfolio" />
       <Container>
-        <Row className="py-5"></Row>
+        <Row className="py-5">
+          <Col>
+            <p>In development...</p>
+          </Col>
+        </Row>
       </Container>
     </Layout>
   )

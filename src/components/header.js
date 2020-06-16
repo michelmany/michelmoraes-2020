@@ -22,14 +22,14 @@ const Header = props => {
     toggleMenu()
   }
 
-  function toggleMenu() {
+  const toggleMenu = () => {
     isOpen
       ? bodyEl.classList.remove("show-menu")
       : bodyEl.classList.add("show-menu")
   }
 
-  function closeMenu(ev) {
-    var target = ev.target
+  const closeMenu = ev => {
+    const target = ev.target
     if (isOpen && target !== openBtn) {
       toggleMenu()
     }
